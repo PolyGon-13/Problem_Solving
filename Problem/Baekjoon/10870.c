@@ -16,3 +16,6 @@ int main()
 	printf("%d\n",fibo(n));	
 	return 0;
 }
+
+// return fibo(n-1)+fibo(n-2);
+// 위 식에서 fibo(n-1)과 fibo(n-2)가 작은 요소들로 쪼개지는 과정 직접 그려보기 
