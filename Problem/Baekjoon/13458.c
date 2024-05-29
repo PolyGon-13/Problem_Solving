@@ -2,30 +2,31 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main() {
+int main() 
+{
+	int i;
+	int n,b,c;
+	long long cnt=0;
 
-	int n, b, c;
-	long long sup = 0; // 최소 감독관의 수
+	scanf("%d",&n);
 
-	scanf("%d", &n);
-
-	int *a = (int *)malloc(sizeof(int)*n);
-	for (int i = 0; i < n; i++) {
+	int* a=(int*)malloc(sizeof(int)*n);
+	for(int i = 0; i < n; i++)
 		scanf("%d", &a[i]);
-	}
 	
-	scanf("%d%d", &b, &c);
+	scanf("%d %d",&b,&c);
 
-	for (int i = 0; i < n; i++) {
-		sup += 1;
-		a[i] -= b;
+	for(i=0;i<n;i++) 
+	{
+		cnt+=1;
+		a[i]-=b;
         
-		if (a[i] > 0) {
-			sup += ceil(a[i] * 1.0 / c);
-		}
+		if(a[i]>0)
+			cnt+=ceil(a[i]*1.0/c);
 	}
-	printf("%lld", sup);
+	printf("%lld",cnt);
 
 	free(a);
-    
+
+	return 0;
 }
