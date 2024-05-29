@@ -11,8 +11,8 @@ int main()
 	scanf("%d",&n);
 
 	int* a=(int*)malloc(sizeof(int)*n);
-	for(int i = 0; i < n; i++)
-		scanf("%d", &a[i]);
+	for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
 	
 	scanf("%d %d",&b,&c);
 
@@ -22,7 +22,7 @@ int main()
 		a[i]-=b;
         
 		if(a[i]>0)
-			cnt+=ceil(a[i]*1.0/c);
+			cnt+=ceil(a[i]*1.0/c); // 매개변수로 받은 수를 올림, 내림은 floor()
 	}
 	printf("%lld",cnt);
 
