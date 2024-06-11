@@ -9,7 +9,7 @@ typedef struct
 
 int compare(const void* a,const void* b)
 {
-	coord A=*(coord*)a;
+	coord A=*(coord*)a; // coord형의 A로 입력받은 a를 사용할 수 있게 됨
 	coord B=*(coord*)b;
 	
 	if(A.x>B.x)
@@ -21,7 +21,7 @@ int compare(const void* a,const void* b)
 		else
 			return -1;
 	}
-	return -1;
+	return -1; // A.x < B.x인 경우
 }
 
 int main()
