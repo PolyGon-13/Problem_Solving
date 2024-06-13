@@ -41,7 +41,7 @@ int main()
 		list[i].idx=i;
 	}
 	
-	qsort(list,n,sizeof(list[0]),compare);
+	qsort(list,n,sizeof(list[0]),compare); // 퀵 정렬 => 비교함수 compare는 첫 번째 변수(a)가 두 번째 변수(b)보다 클 때 1을, a가 b보다 작을 때 -1을, 같으면 0을 반환하도록 하는 함수이다.
 	
 	for(i=0;i<n;i++)
 		printf("%d %s\n",list[i].age,list[i].name);
