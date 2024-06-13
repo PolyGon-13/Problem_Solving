@@ -49,7 +49,8 @@ int main()
 	return 0;
 }
 
-
+// 버블정렬을 이용한 코드 => But 시간초과로 틀림
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -97,3 +98,4 @@ int main()
 	
 	return 0;
 }
+*/
