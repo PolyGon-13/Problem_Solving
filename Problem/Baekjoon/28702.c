@@ -15,7 +15,6 @@ int FizzBuzz(int n)
 
 int main()
 {
-	char result[20];
 	char a[20],b[20],c[20];
 	scanf("%s %s %s",a,b,c);
 
