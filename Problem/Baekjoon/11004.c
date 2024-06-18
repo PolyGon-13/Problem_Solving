@@ -25,6 +25,8 @@ int main()
   // qsort(배열, 배열요소의 개수, 배열 요소의 크기, 비교함수)
   // 비교함수는 a와 b를 비교하였을 때, a가 더 크면 양수를, b가 더 크면 음수를, 같으면 0을 반환하는 함수여야 한다.
 	printf("%d\n",arr[k-1]);
+
+	free(arr);
 	
 	return 0;
 }
@@ -64,7 +66,9 @@ int main()
 	
 	bubble(arr,n);
 	printf("%d\n",arr[k-1]);
-	
+
+	free(arr);
+ 
 	return 0;
 }
 */
