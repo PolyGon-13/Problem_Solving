@@ -37,6 +37,7 @@ int dequeue(queue *q)
     if(is_empty(q))
         return -1;
     q->front = (q->front + 1) % size;
+    // q->front는 초기에 0이기 때문에 1을 더하여 1부터 n까지 데이터를 저장할 수 있도록 한다.
     return q->que[q->front];
 }
 
