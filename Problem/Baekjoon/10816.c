@@ -18,15 +18,22 @@ int bin_search(int a[],int key, int n)
 	{
 		center=(start+rear)/2;
 		a[center]>key ? rear=center : (start=center+1);
+		// key보다 요소의 값이 크면 rear를 center로 옮김
+		// key보다 요소의 값이 작거나 같으면 start를 center+1로 옮김
+		// key값과 요소가 같다면 검색범위를 왼쪽에서부터 줄여서 index가 가장 큰 key값이 검색되게 함
 	}
+	int temp=rear; // rear의 값은 최종 index보다 1 큼
 	
-	int temp=rear;
-	start=0,rear=n;
+	start=0;
+	rear=n;
 	while(start<rear)
 	{
 		center=(start+rear)/2;
 		a[center]>=key ? rear=center : (start=center+1);
+		// key보다 요소의 값이 크거나 같으면 rear를 center로 옮김
+		// key보다 요소의 값이 작으면 start를 center+1로 옮김
 	}
+	// rear의 값은 최소 index의 값
 	
 	return temp-rear;
 }
