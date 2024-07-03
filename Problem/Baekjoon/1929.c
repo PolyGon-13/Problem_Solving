@@ -11,6 +11,7 @@ int main()
 		if(num[i]==0)
 			for(j=2;i*j<=n;j++)
 				num[i*j]=1;
+	// 특정 수의 배수를 모두 지우는 과정
 	
 	for(i=m;i<=n;i++)
 		if(num[i]==0)
