@@ -31,6 +31,8 @@ int main()
 		sum1+=sum2;
 	}
 	printf("%d\n",sum1);
+
+	free(p);
 	
 	return 0;
 }
