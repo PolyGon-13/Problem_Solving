@@ -1,5 +1,5 @@
 ## 코딩 테스트
-[웹 코딩 사이트](https://www.tutorialspoint.com/codingground.htm](https://replit.com/)
+[웹 코딩 사이트](https://replit.com/)
 </br>
 1. 백준</br>
 2. CodeForces</br>
