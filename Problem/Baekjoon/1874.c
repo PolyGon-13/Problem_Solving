@@ -39,7 +39,9 @@ int main()
             printf("NO\n");
             return 0;
         }
-        if(result_idx==n*2) // n개의 숫자가 push 1번, pop 1번 수행됨
+        if(result_idx==n*2) 
+        // n개의 숫자가 push 1번, pop 1번 수행됨
+        // n개의 숫자가 있으면 1부터 n까지 모든 숫자가 결국에는 스택에 1번 push되고, 해당 숫자가 idx일때 1번 pop되는 구조
             break;
     }
     
