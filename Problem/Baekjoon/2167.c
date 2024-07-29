@@ -12,8 +12,7 @@ int main()
 	int **arr=(int **)malloc(sizeof(int *)*n);
 	for(a=0;a<n;a++)
 		arr[a]=(int *)malloc(sizeof(int)*m);
-	*/  
-
+	*/
 	
 	for(a=0;a<n*m;a++)
 		scanf("%d",&arr[a/m][a%m]);
