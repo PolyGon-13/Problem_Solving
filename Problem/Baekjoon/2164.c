@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define size 500001
 
 typedef struct
