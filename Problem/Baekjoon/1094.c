@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define pole 64
 
 int main()
