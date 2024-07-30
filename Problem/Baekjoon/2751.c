@@ -20,9 +20,7 @@ int main()
 	scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
-	{
 		scanf("%d",&num[i]);
-	}
 	
 	qsort(num,n,sizeof(int),compare); // (정렬할 배열, 요소개수, 요소크기, 비교함수) 
 	
