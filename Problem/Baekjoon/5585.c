@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define pay 1000
 
 int main()
