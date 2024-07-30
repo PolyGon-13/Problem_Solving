@@ -28,7 +28,7 @@ int main()
 	
 	for(i=0;i<len;i++)
 	{
-		if(arr[i]=='X')
+		if(arr[i]=='X') // 위의 for문을 거쳐왔는데 X가 존재한다는 것은 조건에 만족하지 않는다는 의미
 		{
 			flag=1;
 			break;
