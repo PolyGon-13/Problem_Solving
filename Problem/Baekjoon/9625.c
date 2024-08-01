@@ -10,6 +10,7 @@ typedef struct
 
 node dp[SIZE];
 
+/*
 void init_dp()
 {
 	int i;
@@ -19,6 +20,7 @@ void init_dp()
 		dp[i].cnt_b=0;
 	}
 }
+*/
 
 node dynamic(int n)
 {
@@ -47,6 +49,8 @@ node dynamic(int n)
 	
 	dp[n].cnt_a=tmp_1.cnt_a+tmp_2.cnt_a;
 	dp[n].cnt_b=tmp_1.cnt_b+tmp_2.cnt_b;
+	// k가 1인 경우부터 쭉 나열해보면 피보나치 수열처럼 k=0, k=1일 때의 a와 b의 개수를 더하면 k=2인 경우임
+	// 재귀함수를 이용해서 아래로 뻗어나간 후 위로 더해주면 해당 과정을 수행할 수 있음
 	
 	return dp[n];
 }
