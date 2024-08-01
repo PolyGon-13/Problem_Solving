@@ -11,6 +11,7 @@ typedef struct
 node dp[SIZE];
 
 /*
+// 참고한 코드에 포함되어 있었는데 해당 문제에는 필요없어 보임
 void init_dp()
 {
 	int i;
