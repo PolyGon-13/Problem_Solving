@@ -28,15 +28,16 @@ int main()
 	
 	for(i=0;i<n+m;i++)
 		scanf("%s",str1[i].input);
+	// '듣도 못한 사람'과 '보도 못한 사람'을 n+m으로 한꺼번에 입력받음
 	
 	qsort(str1,n+m,sizeof(str1[0]),(int(*)(const void *,const void *))compare);
+	// 한꺼번에 입력받은 배열 str1을 정렬
 	
 	int idx=0;
 	for(i=0;i<n+m;i++)
-	{
 		if(strcmp(str1[i].input,str1[i+1].input)==0)
 			strcpy(str2[idx++].save,str1[i++].input);
-	}
+	// str1의 연속된 요소가 같다면 str2에 복붙
 	
 	printf("%d\n",idx);
 	for(i=0;i<idx;i++)
