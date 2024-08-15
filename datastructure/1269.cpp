@@ -102,12 +102,14 @@ int main()
 	for(i=0;i<n;i++)
 		cin>>v[i];
 	
-	sort(v.begin(),v.end());
+	sort(v.begin(),v.end()); // 정렬할 시작점과 끝점 매개변수로 입력
+ 	// default는 오름차순, greater<자료형>()을 3번째 인자로 넣으면 내림차순 정렬
+  	// 3번째 인자에 함수를 입력하면 정렬할 기준을 지정할 수 있음
 	
 	for(i=0;i<m;i++)
 	{
 		cin>>t;
-		if(binary_search(v.begin(),v.end(),t))
+		if(binary_search(v.begin(),v.end(),t)) // 찾고자 하는 범위의 시작점, 범위의 끝점, 찾고자 하는 수를 매개변수로 입력
 			cnt++;
 	}
 	cout<<v.size()-2*cnt<<endl; // 교집합을 이용한 풀이
