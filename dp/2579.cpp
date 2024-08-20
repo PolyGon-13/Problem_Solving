@@ -31,7 +31,7 @@ int main()
 	for(i=4;i<=n;i++)
 	{
 		int temp1=dp[i-2]+step[i];
-		int temp2=dp[i-3]+step[i-1]+step[i];
+		int temp2=dp[i-3]+step[i-1]+step[i]; // dp[i-1]+step[i]로 하면 연속해서 계단 3개를 밟는 것이므로 불가능
 		dp[i]=(temp1>temp2)?temp1:temp2;
 	}
 	cout<<dp[n]<<'\n';
