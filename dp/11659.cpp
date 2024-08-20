@@ -27,7 +27,7 @@ int main()
 	for(i=0;i<m;i++)
 	{
 		cin>>a>>b;
-		result=list[b]-list[a-1];
+		result=list[b]-list[a-1]; // a<b일때, (1~b까지 합) - (1~a-1까지 합) = (a~b까지 합)
 		cout<<result<<'\n';
 	}
 	
