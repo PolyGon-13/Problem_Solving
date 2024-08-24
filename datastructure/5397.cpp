@@ -18,7 +18,7 @@ int main()
 	while(t--)
 	{
 		cin>>line;
-		pwd.clear();
+		pwd.clear(); // list 내의 모든 요소 제거
 		cur=pwd.begin();
 		
 		for(const auto& cmd:line)
@@ -37,11 +37,12 @@ int main()
 			{
 				if(cur!=pwd.begin())
 					cur=pwd.erase(--cur);
+					// 아래에서 입력 후에는 cur++ 해주므로 --cur로 erase
 			}
 			else
 			{
 				cur=pwd.insert(cur,cmd);
-				cur++;
+				cur++; // 다음 입력을 위해 커서 한 칸 이동
 			}
 		}
 		
