@@ -23,3 +23,4 @@ int main()
 	
 	return 0;
 }
+// a번 승강장의 높이
