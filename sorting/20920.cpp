@@ -19,6 +19,7 @@ bool cmp(pair<string,int>& a,pair<string,int>& b)
 	}
 	return a.second>b.second;
 }
+// sort의 cmp 함수에서 a와 b를 비교하여 true를 반환한다는 것은 a가 b보다 우선적으로 정렬되어야 함을 의미(a가 b보다 앞에 존재)
 
 unordered_map<string,int> map;
 
