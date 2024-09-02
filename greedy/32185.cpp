@@ -41,4 +41,3 @@ int main()
 	
 	return 0;
 }
-// 꿈 열정 나눔
