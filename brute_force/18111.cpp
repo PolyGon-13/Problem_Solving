@@ -21,7 +21,7 @@ int main()
 		for(int j=0;j<m;j++)
 			cin>>v[i][j];
 	
-	for(int i=0;i<=256;i++)
+	for(int i=0;i<=256;i++) // 가능한 높이마다 가능한 시간을 전부 계산 (brute force)
 	{
 		rt=0; // 블록 제거 시간
 		st=0; // 블록 설치 시간
