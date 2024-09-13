@@ -40,6 +40,18 @@ int main()
 				left--;
 				right++;
 			}
+			/*
+			arr[num]=!arr[num];
+			
+			for(int i=1;arr[num+i]==arr[num-i];i++) // for문을 이용한 방법
+			{
+				if(num+i>n || num-i<1)
+					break;
+				
+				arr[num+i]=!arr[num+i];
+				arr[num-i]=!arr[num-i];
+			}
+			*/
 		}
 	}
 	
