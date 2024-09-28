@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// 오버로딩
 void merge_sort(array<int,500001>& a,int start,int end,int k);
 void merge(array<int,500001>& a,int p,int q,int r,int k);
 
