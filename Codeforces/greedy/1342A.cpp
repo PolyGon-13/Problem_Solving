@@ -18,11 +18,11 @@ int main()
 	while(t--)
 	{
 		ll ans1=0,ans2=0;
-
+		
 		cin>>x>>y;
 		cin>>a>>b;
 		
-		if(x<y)
+		if(x>y)
 			swap(x,y);
 		
 		ans1=x*a+y*a;
